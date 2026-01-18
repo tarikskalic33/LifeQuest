@@ -1,0 +1,41 @@
+{
+  "project": "lifequest",
+  "description": "LifeQuest Platinum v2.0 - Gamified life coach mobile app",
+  "framework": "flutter",
+  "language": "dart",
+  "platform": "multi-platform",
+  "deployment": {
+    "platform": "manus",
+    "url": "https://lifequest-dduv2x5v.manus.space",
+    "build_output": "build/web"
+  },
+  "firebase": {
+    "enabled": true,
+    "services": ["auth", "firestore", "analytics"]
+  },
+  "commands": {
+    "build_web": "flutter build web --release",
+    "build_android": "flutter build apk --release",
+    "build_ios": "flutter build ios --release",
+    "test": "flutter test",
+    "clean": "flutter clean",
+    "deploy": "pwsh -File scripts/deploy-to-manus.ps1"
+  },
+  "ai_context": {
+    "tech_stack": [
+      "Flutter",
+      "Firebase (Auth, Firestore, Storage)",
+      "Provider (State Management)",
+      "OpenAI API",
+      "Gamification System"
+    ],
+    "key_features": [
+      "XP & Leveling System",
+      "Quest Management",
+      "Achievement System",
+      "Social Leaderboards",
+      "AI Quest Generation"
+    ],
+    "current_phase": "Deployment & AI Integration"
+  }
+}
